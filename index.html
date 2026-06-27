@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atika Dewi Suryani — Builder &amp; Founder · Portfolio 2026</title>
+  <meta name="description" content="Portofolio Atika Dewi Suryani — builder & founder. Sistem booking kos, platform belajar hijau, dan workspace AI lokal. Next.js, Python/FastAPI, dan agen AI." />
+  <meta name="author" content="Atika Dewi Suryani" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Atika Dewi Suryani — Portfolio 2026" />
+  <meta property="og:description" content="Builder & founder. Membangun sistem yang merapikan kerja nyata — dari operasi kos sampai workspace AI lokal." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============================ Header ============================ -->
+  <header class="site-head">
+    <div class="shell site-head__inner">
+      <a href="#top" class="wordmark">Atika Dewi Suryani <span>— Portfolio ’26</span></a>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="#work">Karya</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact" class="site-nav__contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================ Hero ============================ -->
+    <section class="hero shell" aria-labelledby="hero-title">
+      <p class="hero__lead reveal">Membangun sistem yang merapikan kerja nyata — supaya tidak ada yang kelewat.</p>
+      <h1 class="hero__title reveal" id="hero-title">
+        Builder &amp; founder<br />
+        <span class="soft">yang menjalankan ide</span><br />
+        sampai dipakai.
+      </h1>
+
+      <dl class="hero__meta reveal">
+        <div>
+          <dt>Peran</dt>
+          <dd>Product · Frontend · Otomasi &amp; AI</dd>
+        </div>
+        <div>
+          <dt>Fokus</dt>
+          <dd>Masalah operasional nyata, dikirim cepat &amp; rapi</dd>
+        </div>
+        <div>
+          <dt>Basis</dt>
+          <dd>Indonesia · 2026</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ============================ Work ============================ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section__head">
+          <h2 class="section__title" id="work-title">Karya Terpilih</h2>
+          <span class="section__count">Lima proyek · 2026</span>
+        </div>
+
+        <div class="work">
+          <!-- 01 — KELOLAKOS / Top Hills -->
+          <article class="project reveal">
+            <div class="project__index">01</div>
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__name">KELOLAKOS — Top Hills</h3>
+                <span class="project__role">Founder · Product</span>
+              </div>
+              <p class="project__function">
+                Sistem manajemen kos &amp; penginapan. Calon penyewa booking sendiri,
+                unggah bukti bayar, lalu kunci diserahkan — lengkap dengan denah kamar
+                real-time dan cek ketersediaan per rentang tanggal.
+              </p>
+              <dl class="spec">
+                <div class="spec__row">
+                  <dt>Fungsi</dt>
+                  <dd>Booking publik → bukti bayar → serah kunci. Denah kamar live, beda DP vs Lunas, broadcast ketersediaan ke WhatsApp.</dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Bahasa &amp; Teknologi</dt>
+                  <dd class="tags">
+                    <span class="tag">Next.js 15</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">Google Apps Script</span>
+                    <span class="tag">Google Sheets</span>
+                  </dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Struktur</dt>
+                  <dd>Halaman publik <code>/info</code> + dashboard internal <code>/booking</code>, dengan satu sumber kebenaran di Google Sheet. 130+ pull request terkirim.</dd>
+                </div>
+              </dl>
+              <div class="project__foot">
+                <span class="status status--live">Produksi · aktif</span>
+                <a class="repo-link" href="https://github.com/Oksana3301/KELOLAKOS-" target="_blank" rel="noopener">github.com/Oksana3301/KELOLAKOS-</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 — aside-os -->
+          <article class="project reveal">
+            <div class="project__index">02</div>
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__name">aside-os</h3>
+                <span class="project__role">Builder</span>
+              </div>
+              <p class="project__function">
+                Workspace “smart browser” yang lokal dan privat. Agen AI bekerja lintas
+                situs yang sudah kamu login, dengan memori tersimpan di disk dan batas
+                biaya yang keras — tidak ada yang keluar dari mesinmu.
+              </p>
+              <dl class="spec">
+                <div class="spec__row">
+                  <dt>Fungsi</dt>
+                  <dd>Server agen lokal + UI (Home / Console / Memory / Settings). Memori di disk, ledger biaya dengan spend cap, brain bisa dipilih.</dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Bahasa &amp; Teknologi</dt>
+                  <dd class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">Vanilla JS</span>
+                    <span class="tag">Ollama / Gemini</span>
+                  </dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Struktur</dt>
+                  <dd><code>backend/</code> (app · brains · store · config) + <code>frontend/</code> (satu UI) + <code>data/</code> lokal yang tidak pernah diunggah.</dd>
+                </div>
+              </dl>
+              <div class="project__foot">
+                <span class="status">Build v1</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 — Atika OS -->
+          <article class="project reveal">
+            <div class="project__index">03</div>
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__name">Atika OS</h3>
+                <span class="project__role">Designer · Builder</span>
+              </div>
+              <p class="project__function">
+                Operating system pribadi berbasis file untuk seorang VA sekaligus
+                freelancer. Tangkap apa pun, rutekan ke empat kuadran, lalu setiap pagi
+                muncul tiga hal terpenting — tanpa harus mengingat semuanya sendiri.
+              </p>
+              <dl class="spec">
+                <div class="spec__row">
+                  <dt>Fungsi</dt>
+                  <dd>Capture → routing → brief harian + laci klien. Target sukses: inbox bersih 5 hari berturut-turut.</dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Bahasa &amp; Teknologi</dt>
+                  <dd class="tags">
+                    <span class="tag">Markdown</span>
+                    <span class="tag">Claude Code</span>
+                    <span class="tag">File-based (tanpa app)</span>
+                  </dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Struktur</dt>
+                  <dd>Folder sebagai sistem: <code>inbox</code> · <code>projects</code> · <code>ops</code> · <code>knowledge</code> · <code>team</code>. Tidak ada tombol save — semua jadi file.</dd>
+                </div>
+              </dl>
+              <div class="project__foot">
+                <span class="status status--live">Dipakai harian</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 — Srijau -->
+          <article class="project reveal">
+            <div class="project__index">04</div>
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__name">Srijau</h3>
+                <span class="project__role">Founder</span>
+              </div>
+              <p class="project__function">
+                Platform belajar &amp; berdaya hijau. Menyebarkan green behavior dan
+                membuka monetisasi green industry untuk masyarakat Indonesia usia
+                produktif — diutamakan ibu, pengajar pertama keluarga dan masyarakat.
+              </p>
+              <dl class="spec">
+                <div class="spec__row">
+                  <dt>Fungsi</dt>
+                  <dd>Edukasi hijau + jalur monetisasi, dibungkus tone hangat dan ber-misi (bukan doomism, bukan eco-elite).</dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Bahasa &amp; Teknologi</dt>
+                  <dd class="tags">
+                    <span class="tag">Riset lapangan</span>
+                    <span class="tag">Brand &amp; konten</span>
+                    <span class="tag">Platform</span>
+                  </dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Struktur</dt>
+                  <dd>Tahap beta dengan 72 evaluator dari 13 provinsi. Persona brand &amp; socmed playbook sudah ditetapkan.</dd>
+                </div>
+              </dl>
+              <div class="project__foot">
+                <span class="status status--beta">Beta · 13 provinsi</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05 — Cermin Semesta -->
+          <article class="project reveal">
+            <div class="project__index">05</div>
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__name">Cermin Semesta</h3>
+                <span class="project__role">Founder · Creative</span>
+              </div>
+              <p class="project__function">
+                Artefak sinematik yang personal. Pembacaan tarot dikemas menjadi video
+                60–90 detik sebagai ritual refleksi diri — bukan ramalan, tapi
+                “cermin yang berbicara” yang bisa disimpan dan diputar ulang.
+              </p>
+              <dl class="spec">
+                <div class="spec__row">
+                  <dt>Fungsi</dt>
+                  <dd>Self-reflection ritual dalam bentuk video pendek personal, dibingkai aman secara budaya.</dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Bahasa &amp; Teknologi</dt>
+                  <dd class="tags">
+                    <span class="tag">Produksi video</span>
+                    <span class="tag">Storytelling</span>
+                    <span class="tag">Brand</span>
+                  </dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Struktur</dt>
+                  <dd>Pilot 3 klien gratis → iterasi → launch. Naming &amp; positioning v1 terkunci.</dd>
+                </div>
+              </dl>
+              <div class="project__foot">
+                <span class="status">Brainstorm → pilot</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ About ============================ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="shell">
+        <div class="section__head">
+          <h2 class="section__title" id="about-title">Tentang</h2>
+          <span class="section__count">Atika Dewi Suryani</span>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__body reveal">
+            <p>
+              Saya <strong>builder &amp; founder</strong> yang senang menyelesaikan
+              masalah operasional nyata. Saya membangun sistem yang merapikan kerja —
+              dari operasi kos dan penginapan, platform belajar hijau, sampai workspace
+              AI yang berjalan lokal di mesin sendiri.
+            </p>
+            <p>
+              Cara kerja saya: <strong>kirim cepat, rapikan, ulangi.</strong> Lebih dari
+              seratus pull request pada satu produk dalam hitungan minggu, dengan satu
+              sumber kebenaran yang jelas dan alur yang bisa dipakai orang sungguhan —
+              bukan sekadar demo.
+            </p>
+            <p>
+              Saat ini saya juga menyiapkan diri menjadi <strong>mentor</strong> dan
+              membuka kolaborasi untuk pekerjaan product, frontend, dan otomasi berbasis AI.
+            </p>
+          </div>
+
+          <dl class="capabilities reveal">
+            <div class="cap__group">
+              <dt>Product &amp; Frontend</dt>
+              <dd>Next.js · React · TypeScript · Tailwind CSS · desain UI &amp; alur</dd>
+            </div>
+            <div class="cap__group">
+              <dt>Backend &amp; Data</dt>
+              <dd>Python · FastAPI · SQLite · Google Apps Script · Google Sheets</dd>
+            </div>
+            <div class="cap__group">
+              <dt>AI &amp; Otomasi</dt>
+              <dd>Agen AI · Claude Code · Ollama · Gemini · alur lokal &amp; spend cap</dd>
+            </div>
+            <div class="cap__group">
+              <dt>Founder Craft</dt>
+              <dd>Positioning · brand voice · socmed playbook · riset lapangan</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ Contact ============================ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell">
+        <p class="eyebrow reveal" style="margin-bottom: 1.4rem;">Mari ngobrol</p>
+        <h2 class="contact__title reveal" id="contact-title">
+          <a href="mailto:dewiatika4295@gmail.com">dewiatika4295@gmail.com</a>
+        </h2>
+        <div class="contact__row reveal">
+          <a href="https://github.com/Oksana3301" target="_blank" rel="noopener">GitHub — Oksana3301</a>
+          <a href="mailto:dewiatika4295@gmail.com">Email</a>
+          <span>Terbuka untuk product · frontend · mentoring</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ Footer ============================ -->
+  <footer class="site-foot">
+    <div class="shell site-foot__inner">
+      <span>© 2026 Atika Dewi Suryani</span>
+      <span>Dibuat dengan HTML &amp; CSS — tanpa framework</span>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal on scroll — compositor-friendly, respects reduced motion.
+    (function () {
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var items = document.querySelectorAll(".reveal");
+      if (reduce || !("IntersectionObserver" in window)) {
+        items.forEach(function (el) { el.classList.add("is-in"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -10% 0px", threshold: 0.1 });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
