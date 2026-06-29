@@ -74,6 +74,14 @@ const PROJECTS = {
     structure: ["Hero → featured projects → live tool", "Component-driven layout", "Responsive from mobile up"],
     stack: ["HTML", "CSS", "JavaScript"], extra: { "Type": "Inter · Poppins" }, kicker: "A site that does something on arrival."
   },
+  kitchenos: {
+    kind: "build", name: "KitchenOS", accent: "#C0552B", repos: [], languages: "Figma (prototype)", year: "2026", status: "Prototype",
+    tagline: "Operational tooling for a kitchen / F&B workflow — prototyped in Figma.",
+    func: "DRAFT — confirm what KitchenOS actually does (e.g. orders, prep tickets, station status, inventory) and I'll finalize this section.",
+    funcBullets: ["DRAFT — key capability 1", "DRAFT — key capability 2", "DRAFT — key capability 3"],
+    structure: ["Designed as an interactive Figma prototype", "DRAFT — screens / build stack to confirm"],
+    stack: ["Figma"], extra: { "Source": "Figma prototype" }, kicker: "DRAFT — add a one-line summary."
+  },
 
   /* ===== CASE STUDIES (product management) ===== */
   coal: {
