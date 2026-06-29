@@ -120,6 +120,7 @@ const PROJECTS = {
   },
   supermom: {
     kind: "case", name: "SuperMom", kicker: "Maternal wellness", role: "Product Manager", platform: "mobile", accent: "#A86B9C",
+    screenshot: "assets/supermom.png", screenshotCaption: "SuperMom — app screens (design board)",
     metricsGrid: [{ v: "150", l: "Beta users at launch" }, { v: "65%", l: "Activation (first entry)" }, { v: "28%", l: "Day-7 retention (target 20%)" }, { v: "34", l: "NPS among engaged users" }],
     tagline: "A private journaling, mood-tracking, and peer-support app for mothers — gentle by design.",
     problem: { summary: "New and stay-at-home moms feel isolated and can't consistently track their mood; existing journaling and social apps are either too clinical or too public.", impact: ["No private, low-effort way to log daily life.", "No easy way to spot mood patterns over time.", "No empathetic micro-community for short, actionable support.", "Existing tools feel either too clinical or too exposed."] },
