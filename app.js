@@ -76,6 +76,7 @@ const PROJECTS = {
   },
   kitchenos: {
     kind: "build", name: "KitchenOS", accent: "#ED553B", repos: [], languages: "Figma · Web", year: "2026", status: "Concept · marketing page",
+    screenshot: "assets/kitchenos.png", screenshotCaption: "KitchenOS — QSR command center (live dashboard, order queue)",
     tagline: "Operations software for quick-service restaurants — from purchase to serve to review, in one system.",
     func: "A QSR operating system designed around the SERVE principles — speed-first, error-proof, role-based, with a single source of truth and a continuous experience loop — covering the whole kitchen lifecycle.",
     funcBullets: ["SERVE — Speed first · Error-proof ops · Role-based relevance · Visibility of truth · Experience loop", "Lifecycle: Purchase → Receive → Store → Prepare → Serve → Review", "Six modules: Orders & queue · Kitchen workflow · Inventory · Purchasing · Workforce · Owner visibility"],
@@ -144,15 +145,6 @@ const PROJECTS = {
     evaluation: { goals: ["Give SMEs a defensible way to quantify refrigerant leaks under ISO 14064-1.", "Support both top-up (mass-balance) and screening methods in one register.", "Embed AR5 GWP factors so users don't have to hunt them down.", "Output tCO2e per unit and a clean, auditable total."], hmw: ["Quantify an invisible Scope 1 source with whatever data a company actually has?", "Let users start with screening estimates, then upgrade to mass-balance?", "Make missing service data impossible to ignore rather than silently assumed?"], opportunities: [{ title: "Equipment register", desc: "One row per unit; choose top-up or screening method." }, { title: "Embedded AR5 GWP", desc: "R-32, R-410A, R-134a, R-404A, SF6 and more, built in." }, { title: "Data-gap flags", desc: "Auto-flags rows still on screening estimates." }, { title: "tCO2e outputs", desc: "Per-unit and total, formula-driven and auditable." }], timeline: [] },
     solution: { approach: "A formula-driven Excel register that turns sparse equipment data into a defensible refrigerant emissions number — mass-balance where service records exist, screening where they don't — with embedded AR5 GWP factors converting leaked mass into tCO2e automatically.", features: [{ name: "Two methods, one sheet", desc: "Top-up (mass-balance) and screening side by side." }, { name: "Built-in AR5 GWP", desc: "R-32, R-410A, R-134a, R-404A, SF6 — ready to use." }, { name: "Auto data-gap flags", desc: "Highlights any unit still on a screening estimate." }, { name: "Per-unit & total tCO2e", desc: "Transparent formulas you can defend in review." }], screens: ["Equipment Register", "Results Summary"] },
     outcome: { metrics: ["1 kg R-32 = 0.68 tCO2e; 1 kg SF6 = 23.5 tCO2e — the high-GWP gap made visible.", "Example register: ~17.7 kg leaked across units ≈ ~44 tCO2e.", "Catches a Scope 1 source nearly all SMEs omit entirely.", "Auditable against ISO 14064-1 and the IPCC fugitive method."], quote: "A source almost everyone forgets — now it has a number." }
-  },
-  risk: {
-    kind: "case", name: "Risk Management Agent System", kicker: "AI Workflow · Enterprise Risk", role: "AI Workflow Designer", platform: "web", accent: "#6E7B45", draft: true,
-    tagline: "A multi-agent workflow concept for intake, RCSA review, regulatory grounding, KRI, stress test, and deliverable generation.",
-    problem: { summary: "Enterprise risk teams juggle intake, RCSA reviews, regulatory grounding, and reporting across disconnected tools and manual steps.", impact: ["Manual RCSA review is slow and inconsistent.", "Regulatory grounding is hard to keep current.", "DRAFT — add the specific pains you captured."] },
-    framing: { methods: ["DRAFT — add your discovery method"], quotes: [], insights: ["Multi-agent split: intake, RCSA, grounding, KRI, stress test, deliverable."] },
-    evaluation: { goals: ["Automate the first-pass RCSA review.", "Ground recommendations in current regulation.", "Generate audit-ready deliverables."], hmw: ["Route a risk intake to the right agent automatically?", "Keep regulatory grounding current and citable?"], opportunities: [{ title: "Intake agent", desc: "Classifies and routes incoming risk items." }, { title: "RCSA agent", desc: "First-pass control self-assessment review." }, { title: "Grounding agent", desc: "Cites current regulation for each finding." }], timeline: [] },
-    solution: { approach: "DRAFT — describe the agent orchestration once finalized.", features: [{ name: "Intake → RCSA → Grounding", desc: "Chained agents for review and citation." }, { name: "KRI & Stress Test", desc: "Generates indicators and scenario stress tests." }, { name: "Deliverable Generation", desc: "Audit-ready outputs." }], screens: ["Agent Workflow", "RCSA Review", "Deliverable"] },
-    outcome: { metrics: ["DRAFT — add concept validation / pilot outcomes."], quote: "" }
   }
 };
 
@@ -244,6 +236,8 @@ function renderBuild(p) {
   const A = p.accent;
   p.kicker_eyebrow = "Engineering · " + (p.repos[0] || p.name); p.role_badge = p.status;
   const out = [heroEl(p)];
+
+  if (p.screenshot) out.push(`<section style="padding:26px 0 0;"><div style="${WRAP}"><figure style="margin:0;"><img src="${p.screenshot}" alt="${esc(p.screenshotCaption || p.name)}" loading="lazy" style="width:100%; border-radius:14px; border:1px solid #E2D6BC; box-shadow:0 14px 34px rgba(70,48,20,.14); display:block;"/><figcaption style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.04em; color:#9C8E74; margin-top:10px;">${esc(p.screenshotCaption || "")}</figcaption></figure></div></section>`);
 
   // Function
   let fk = `<p style="${LEAD} margin-bottom:18px;">${esc(p.func)}</p>`;
