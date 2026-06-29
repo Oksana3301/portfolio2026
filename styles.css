@@ -85,6 +85,40 @@ a { color: inherit; }
   .hero-side { display: none !important; }
 }
 
+/* ============================================================
+   Nostalgic Mode — an optional aged-photo wash
+   ============================================================ */
+.nostalgia-btn {
+  position: fixed; right: 18px; bottom: 18px; z-index: 60;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: "Space Mono", monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  color: #5C5340; background: #FCF7EB; border: 1px solid #D2C4A4; border-radius: 999px;
+  padding: 9px 14px; cursor: pointer;
+  box-shadow: 0 6px 16px rgba(70,48,20,.14);
+  transition: transform .18s ease, box-shadow .18s ease, background .4s ease, color .4s ease, border-color .4s ease;
+}
+.nostalgia-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(70,48,20,.2); }
+.nostalgia-btn .nostalgia-dot {
+  width: 9px; height: 9px; border-radius: 50%; background: #C9A36B; flex: none;
+  transition: background .4s ease;
+}
+.nostalgia-btn.on { background: #3a2f27; color: #F3E8CE; border-color: #2a221b; }
+.nostalgia-btn.on .nostalgia-dot { background: #F2C24B; }
+
+#nostalgia-vignette {
+  position: fixed; inset: 0; pointer-events: none; z-index: 48; opacity: 0;
+  transition: opacity .6s ease;
+  background:
+    radial-gradient(ellipse at center, transparent 50%, rgba(58,38,12,.22) 100%),
+    repeating-linear-gradient(0deg, rgba(60,40,15,.025) 0 2px, transparent 2px 4px);
+}
+body.nostalgic #nostalgia-vignette { opacity: 1; }
+body.nostalgic #page-wrap {
+  filter: sepia(.2) saturate(.9) contrast(1.03) brightness(1.01);
+  transition: filter .6s ease;
+}
+body.nostalgic #paper-grain { opacity: .16 !important; }
+
 /* ---- reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1 !important; transform: none !important; transition: none; }

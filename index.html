@@ -16,13 +16,13 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div style="position:relative; font-family:'Mulish',sans-serif; color:#2B2419; background:
+<div id="page-wrap" style="position:relative; font-family:'Mulish',sans-serif; color:#2B2419; background:
   radial-gradient(circle at 18% 12%, rgba(176,140,86,.06), transparent 45%),
   radial-gradient(circle at 85% 80%, rgba(150,120,80,.06), transparent 45%),
   #F3EAD8;">
 
   <!-- paper grain -->
-  <div style="position:fixed; inset:0; pointer-events:none; z-index:50; opacity:.07; mix-blend-mode:multiply; background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E'); background-size:170px 170px;"></div>
+  <div id="paper-grain" style="position:fixed; inset:0; pointer-events:none; z-index:50; opacity:.07; mix-blend-mode:multiply; background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E'); background-size:170px 170px;"></div>
 
   <!-- ===================== INDEX ===================== -->
   <div id="index-view">
@@ -421,6 +421,33 @@
   </div>
 
 </div>
+
+<!-- nostalgic mode -->
+<div id="nostalgia-vignette" aria-hidden="true"></div>
+<button id="nostalgia-toggle" class="nostalgia-btn" type="button" onclick="toggleNostalgia()" aria-pressed="false" title="Toggle nostalgic mode">
+  <span class="nostalgia-dot"></span><span class="nlabel">Nostalgic mode</span>
+</button>
+<script>
+  function toggleNostalgia() {
+    var on = document.body.classList.toggle('nostalgic');
+    var b = document.getElementById('nostalgia-toggle');
+    b.classList.toggle('on', on);
+    b.setAttribute('aria-pressed', String(on));
+    b.querySelector('.nlabel').textContent = on ? 'Nostalgic: on' : 'Nostalgic mode';
+    try { localStorage.setItem('nostalgia', on ? '1' : '0'); } catch (e) {}
+  }
+  (function () {
+    var on = false;
+    try { on = localStorage.getItem('nostalgia') === '1'; } catch (e) {}
+    if (on) {
+      document.body.classList.add('nostalgic');
+      var b = document.getElementById('nostalgia-toggle');
+      b.classList.add('on');
+      b.setAttribute('aria-pressed', 'true');
+      b.querySelector('.nlabel').textContent = 'Nostalgic: on';
+    }
+  })();
+</script>
 <script src="app.js" defer></script>
 </body>
 </html>
