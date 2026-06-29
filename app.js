@@ -75,12 +75,12 @@ const PROJECTS = {
     stack: ["HTML", "CSS", "JavaScript"], extra: { "Type": "Inter · Poppins" }, kicker: "A site that does something on arrival."
   },
   kitchenos: {
-    kind: "build", name: "KitchenOS", accent: "#C0552B", repos: [], languages: "Figma (prototype)", year: "2026", status: "Prototype",
-    tagline: "Operational tooling for a kitchen / F&B workflow — prototyped in Figma.",
-    func: "DRAFT — confirm what KitchenOS actually does (e.g. orders, prep tickets, station status, inventory) and I'll finalize this section.",
-    funcBullets: ["DRAFT — key capability 1", "DRAFT — key capability 2", "DRAFT — key capability 3"],
-    structure: ["Designed as an interactive Figma prototype", "DRAFT — screens / build stack to confirm"],
-    stack: ["Figma"], extra: { "Source": "Figma prototype" }, kicker: "DRAFT — add a one-line summary."
+    kind: "build", name: "KitchenOS", accent: "#ED553B", repos: [], languages: "Figma · Web", year: "2026", status: "Concept · marketing page",
+    tagline: "Operations software for quick-service restaurants — from purchase to serve to review, in one system.",
+    func: "A QSR operating system designed around the SERVE principles — speed-first, error-proof, role-based, with a single source of truth and a continuous experience loop — covering the whole kitchen lifecycle.",
+    funcBullets: ["SERVE — Speed first · Error-proof ops · Role-based relevance · Visibility of truth · Experience loop", "Lifecycle: Purchase → Receive → Store → Prepare → Serve → Review", "Six modules: Orders & queue · Kitchen workflow · Inventory · Purchasing · Workforce · Owner visibility"],
+    structure: ["Bold editorial SaaS marketing page, desktop-first 12-column", "Growth logic: Breakeven → Profit → Investor-ready → Franchise → IPO", "Design system — Graphik, ink #1d1c1d, coral #ed553b, highlight yellow #ffdc4d"],
+    stack: ["Figma", "Web", "SaaS"], extra: { "Segment": "Quick-Service Restaurants" }, kicker: "From purchase to serve to review — one system."
   },
 
   /* ===== CASE STUDIES (product management) ===== */
@@ -128,13 +128,13 @@ const PROJECTS = {
     outcome: { quote: "A habit, without the guilt." }
   },
   koco: {
-    kind: "case", name: "KOCO", kicker: "Casual Game", role: "Creator & Developer", platform: "mobile", accent: "#C76B3C", draft: true,
-    tagline: "A casual mobile game I created — simple, fun, and made with a lot of heart.",
-    problem: { summary: "I wanted to build something purely playful — a small, warm casual game made for joy, not engagement metrics.", impact: ["Most casual games lean on ads and dark patterns.", "Few small games feel personal or handmade.", "DRAFT — add what sparked KOCO and who it's for."] },
-    framing: { methods: ["Solo build", "Playtesting with friends & family"], quotes: [], insights: ["Keep it simple: one core loop, instantly understandable.", "Charm over complexity — the heart is the feature."] },
-    evaluation: { goals: ["Ship a complete, polished casual loop.", "Make it pick-up-and-play in under 10 seconds.", "Keep it gentle and ad-free."], hmw: ["Make a game that's instantly fun with zero tutorial?", "Keep it small but full of character?"], opportunities: [], timeline: [] },
-    solution: { approach: "A tight, charming core loop with hand-made art and a calm, friendly tone.", features: [{ name: "One-tap core loop", desc: "Simple, satisfying, instantly understood." }, { name: "Hand-made characters", desc: "Warm, original art with personality." }, { name: "Calm & ad-free", desc: "No dark patterns — just play." }], screens: ["Home", "Gameplay", "Win Screen"] },
-    outcome: { metrics: ["Built end-to-end solo as a creative project.", "DRAFT — add downloads / playtest feedback once measured."], quote: "Made simply for the joy of making it." }
+    kind: "case", name: "KOCO", kicker: "EdTech · Learning Games", role: "Creator & Developer", platform: "mobile", accent: "#C76B3C",
+    tagline: "Educational mini-games and multiplayer for preK–12 learners, tuned to each grade level.",
+    problem: { summary: "Young learners from preK to grade 12 lose interest in drill-style practice, and one-size content doesn't fit very different grade levels.", impact: ["Generic content bores some kids and overwhelms others.", "Few learning games adapt to a child's actual grade level.", "Solo practice misses the motivation of playing with peers."] },
+    framing: { methods: ["Designed around preK–12 grade levels", "Playtesting with kids", "Short-session, attention-aware design"], quotes: [], insights: ["Bite-size mini-games hold young attention.", "Multiplayer turns practice into something kids want to do.", "Grade-appropriate content is the core requirement, not a nice-to-have."] },
+    evaluation: { goals: ["Offer mini-games matched to each grade level, preK through 12.", "Add multiplayer so kids learn and compete together.", "Keep every session short and instantly playable."], hmw: ["Match each mini-game to the right grade level?", "Make learning feel multiplayer and social, not solo drilling?", "Keep sessions short enough for young attention spans?"], opportunities: [], timeline: [] },
+    solution: { approach: "A library of bite-size educational mini-games with a multiplayer mode, each tuned to the student's grade level from preK through 12 — so the content always fits the learner.", features: [{ name: "Grade-tuned mini-games", desc: "Content scales by level, preK–12." }, { name: "Multiplayer mode", desc: "Kids learn and compete together." }, { name: "Short, playable sessions", desc: "Pick-up-and-play, attention-aware." }], screens: ["Grade Picker", "Mini-game", "Multiplayer Lobby"] },
+    outcome: { quote: "Learning that feels like playing — with friends." }
   },
   refrigerant: {
     kind: "case", name: "Refrigerant Emission Tracker", kicker: "Carbon Tool · Excel", role: "Carbon Analyst & Builder", platform: "web", accent: "#2E6B4C",
