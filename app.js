@@ -131,6 +131,7 @@ const PROJECTS = {
   },
   koco: {
     kind: "case", name: "KOCO", kicker: "EdTech · Learning Games", role: "Creator & Developer", platform: "mobile", accent: "#C76B3C",
+    screenshot: "assets/koco.png", screenshotCaption: "KOCO Engage — Subjectverse, single/multiplayer, learning map",
     tagline: "Educational mini-games and multiplayer for preK–12 learners, tuned to each grade level.",
     problem: { summary: "Young learners from preK to grade 12 lose interest in drill-style practice, and one-size content doesn't fit very different grade levels.", impact: ["Generic content bores some kids and overwhelms others.", "Few learning games adapt to a child's actual grade level.", "Solo practice misses the motivation of playing with peers."] },
     framing: { methods: ["Designed around preK–12 grade levels", "Playtesting with kids", "Short-session, attention-aware design"], quotes: [], insights: ["Bite-size mini-games hold young attention.", "Multiplayer turns practice into something kids want to do.", "Grade-appropriate content is the core requirement, not a nice-to-have."] },
