@@ -26,6 +26,7 @@ const heroEl = (p) => `<section style="padding:60px 0 4px;"><div style="${WRAP}"
     <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
       <span style="font-family:'Playfair Display',serif; font-style:italic; font-size:14px; color:#2B2419; border:1px solid #D2C4A4; border-radius:999px; padding:4px 13px;">${esc(p.role_badge)}</span>
       ${p.draft ? `<span style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#8A6A1E; background:rgba(198,138,46,.18); border:1px solid rgba(198,138,46,.4); border-radius:6px; padding:4px 9px;">Draft</span>` : ""}
+      ${p.liveUrl ? `<a href="${p.liveUrl}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; color:${p.accent}; text-decoration:none; border:1px solid ${p.accent}; border-radius:999px; padding:5px 13px;">Visit live ↗</a>` : ""}
     </div>
     <p style="color:#5C5340; font-size:clamp(16px,2.2vw,20px); max-width:720px; margin-top:18px; line-height:1.5;">${esc(p.tagline)}</p>
   </div></section>`;
@@ -37,6 +38,7 @@ const PROJECTS = {
   srijau: {
     kind: "build", name: "Srijau", accent: "#A8402E", repos: ["srijauv2", "SRIJAU_GROUP-7-CAPSTONE"], languages: "HTML · JavaScript · Vite", year: "2025–2026", status: "Live · v2",
     screenshot: "assets/srijau.png", screenshotCaption: "Srijau — green-careers platform",
+    liveUrl: "https://srijauv2.vercel.app",
     tagline: "A green-careers platform helping Indonesian women step into climate work — built and shipped solo.",
     func: "A guided path from a self-assessment quiz to matched job listings, wrapped in education and community for women exploring green jobs.",
     funcBullets: ["Solution flow — quiz → result → jobs", "Education — articles with pre/post-tests", "Community — experts + member spaces"],
@@ -46,6 +48,7 @@ const PROJECTS = {
   kelolakos: {
     kind: "build", name: "KelolaKos", accent: "#A8402E", repos: ["KELOLAKOS-", "KelolaKos (legacy)"], languages: "TypeScript · Next.js", year: "2026", status: "Beta",
     screenshot: "assets/kelolakos.png", screenshotCaption: "Top Hills — kost booking site",
+    liveUrl: "https://www.tophillspadang.com/info",
     tagline: "A property operating system for boarding houses, backed by a spreadsheet instead of infrastructure.",
     func: "One dashboard for tenants, deposits, facilities, and occupancy — without learning a database. Owners edit data right in Google Sheets.",
     funcBullets: ["License-code gated access", "Two-way sync with Google Sheets, live", "Bahasa-first UI for real operators"],
@@ -55,19 +58,12 @@ const PROJECTS = {
   sumateraway: {
     kind: "build", name: "SumateraWay", accent: "#1E7A8C", repos: ["sumatra-glide", "tourismwebsite"], languages: "React · Next.js", year: "2025–2026", status: "Prototype",
     screenshot: "assets/sumateraway.png", screenshotCaption: "SumateraWay — tourism discovery",
+    liveUrl: "https://sumateraway.com",
     tagline: "Tourism discovery for Sumatra, explored through two build approaches — one AI-assisted, one hand-built.",
     func: "Reframes travel discovery as something visual and inviting rather than a search box, comparing how each build approach ships.",
     funcBullets: ["Visual-first destination browsing", "Two routes to ship — generated vs hand-built", "Prompt-to-commit iteration loop"],
     structure: ["sumatra-glide — Lovable-generated React app", "Synced back to git for IDE editing", "tourismwebsite — clean Next.js (app router) baseline"],
     stack: ["React", "Next.js", "Lovable", "Vercel"], extra: {}, kicker: "Discovery, not a search box."
-  },
-  constructionops: {
-    kind: "build", name: "ConstructionOps", accent: "#3A5FA0", repos: ["constructionops"], languages: "TypeScript · Next.js", year: "2026", status: "Early",
-    tagline: "Operational tooling for the most under-tooled role on a job site — the supervisor with a clipboard and seven chat groups.",
-    func: "A clean foundation where the value will live in the workflows layered on top — daily checklists and a single place for site status.",
-    funcBullets: ["Clean baseline — Next.js + TypeScript", "Built to absorb job-site workflows", "Push-to-deploy on Vercel"],
-    structure: ["Next.js app-router skeleton", "Strict TypeScript from the start", "Organized for incremental modules"],
-    stack: ["Next.js", "TypeScript", "Geist", "Vercel"], extra: {}, kicker: "Value lives in the workflows."
   },
   portfolio: {
     kind: "build", name: "Portfolio", accent: "#6A4BC2", repos: ["portfolio"], languages: "HTML · CSS · JavaScript", year: "2026", status: "Live",
@@ -81,6 +77,7 @@ const PROJECTS = {
   kitchenos: {
     kind: "build", name: "KitchenOS", accent: "#ED553B", repos: [], languages: "Figma · Web", year: "2026", status: "Concept · marketing page",
     screenshot: "assets/kitchenos.png", screenshotCaption: "KitchenOS — QSR command center (live dashboard, order queue)",
+    liveUrl: "https://gown-mode-15258266.figma.site",
     tagline: "Operations software for quick-service restaurants — from purchase to serve to review, in one system.",
     func: "A QSR operating system designed around the SERVE principles — speed-first, error-proof, role-based, with a single source of truth and a continuous experience loop — covering the whole kitchen lifecycle.",
     funcBullets: ["SERVE — Speed first · Error-proof ops · Role-based relevance · Visibility of truth · Experience loop", "Lifecycle: Purchase → Receive → Store → Prepare → Serve → Review", "Six modules: Orders & queue · Kitchen workflow · Inventory · Purchasing · Workforce · Owner visibility"],
