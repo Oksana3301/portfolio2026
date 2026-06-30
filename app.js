@@ -36,6 +36,7 @@ const PROJECTS = {
   /* ===== BUILDS (engineering) ===== */
   srijau: {
     kind: "build", name: "Srijau", accent: "#A8402E", repos: ["srijauv2", "SRIJAU_GROUP-7-CAPSTONE"], languages: "HTML · JavaScript · Vite", year: "2025–2026", status: "Live · v2",
+    screenshot: "assets/srijau.png", screenshotCaption: "Srijau — green-careers platform",
     tagline: "A green-careers platform helping Indonesian women step into climate work — built and shipped solo.",
     func: "A guided path from a self-assessment quiz to matched job listings, wrapped in education and community for women exploring green jobs.",
     funcBullets: ["Solution flow — quiz → result → jobs", "Education — articles with pre/post-tests", "Community — experts + member spaces"],
@@ -44,6 +45,7 @@ const PROJECTS = {
   },
   kelolakos: {
     kind: "build", name: "KelolaKos", accent: "#A8402E", repos: ["KELOLAKOS-", "KelolaKos (legacy)"], languages: "TypeScript · Next.js", year: "2026", status: "Beta",
+    screenshot: "assets/kelolakos.png", screenshotCaption: "Top Hills — kost booking site",
     tagline: "A property operating system for boarding houses, backed by a spreadsheet instead of infrastructure.",
     func: "One dashboard for tenants, deposits, facilities, and occupancy — without learning a database. Owners edit data right in Google Sheets.",
     funcBullets: ["License-code gated access", "Two-way sync with Google Sheets, live", "Bahasa-first UI for real operators"],
@@ -52,6 +54,7 @@ const PROJECTS = {
   },
   sumateraway: {
     kind: "build", name: "SumateraWay", accent: "#1E7A8C", repos: ["sumatra-glide", "tourismwebsite"], languages: "React · Next.js", year: "2025–2026", status: "Prototype",
+    screenshot: "assets/sumateraway.png", screenshotCaption: "SumateraWay — tourism discovery",
     tagline: "Tourism discovery for Sumatra, explored through two build approaches — one AI-assisted, one hand-built.",
     func: "Reframes travel discovery as something visual and inviting rather than a search box, comparing how each build approach ships.",
     funcBullets: ["Visual-first destination browsing", "Two routes to ship — generated vs hand-built", "Prompt-to-commit iteration loop"],
@@ -68,6 +71,7 @@ const PROJECTS = {
   },
   portfolio: {
     kind: "build", name: "Portfolio", accent: "#6A4BC2", repos: ["portfolio"], languages: "HTML · CSS · JavaScript", year: "2026", status: "Live",
+    screenshot: "assets/portfolio.png", screenshotCaption: "Portfolio — personal site",
     tagline: "A personal site that ships a working tool, not a contact form.",
     func: "A portfolio built as a product surface — with an interactive Product Idea Generator instead of a static about page.",
     funcBullets: ["Interactive Product Idea Generator", "Modern gradient design system", "Mobile-first, hover micro-interactions"],
