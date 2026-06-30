@@ -78,6 +78,7 @@ a { color: inherit; }
   .build-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .work-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .approach-row { grid-template-columns: 1fr !important; }
+  .about-grid { grid-template-columns: 1fr !important; }
   .footer-grid { grid-template-columns: repeat(2, 1fr) !important; }
 }
 @media (max-width: 600px) {
