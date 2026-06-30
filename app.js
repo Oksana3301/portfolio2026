@@ -145,6 +145,7 @@ const PROJECTS = {
   },
   refrigerant: {
     kind: "case", name: "Refrigerant Emission Tracker", kicker: "Carbon Tool · Excel", role: "Carbon Analyst & Builder", platform: "web", accent: "#2E6B4C",
+    screenshot: "assets/refrigerant.png", screenshotCaption: "Refrigerant Emission Tracker — equipment register & tCO2e",
     tagline: "Catches the hidden, high-GWP emissions most companies forget — AC and chiller leaks.",
     problem: { summary: "Refrigerant leaks are invisible and rarely logged, yet a single kilogram can equal hundreds of kilograms of CO2e. Most GHG inventories miss them entirely.", impact: ["Fugitive refrigerant emissions are invisible and almost never recorded.", "1 kg of refrigerant can equal hundreds of kg of CO2e — a material Scope 1 source.", "Nearly all SME inventories omit AC and chiller leaks completely.", "Without a method, there's no defensible number to report or reduce."] },
     framing: { methods: ["ISO 14064-1", "IPCC fugitive method", "AR5 GWP values", "Formula-driven Excel"], quotes: [], insights: ["Two paths: top-up (mass-balance) is most accurate; screening (units × charge × leak rate) works when service data is missing.", "High-GWP gases dominate: 1 kg R-32 = 0.68 tCO2e, while 1 kg SF6 = 23.5 tCO2e.", "The hard part isn't the math — it's making sure no unit is silently left on a rough estimate."] },
